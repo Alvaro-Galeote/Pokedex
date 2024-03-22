@@ -312,3 +312,54 @@ button:hover:before,button:hover:after{
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+
+@media only screen and (max-width: 769px) {
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px); /* Calcula el tamaño para 3 columnas y ajusta el margen */
+    max-width: calc(25% - 20px); /* Establece un máximo para el ancho */
+    box-sizing: border-box; /* Incluye el borde y el padding en el ancho total */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px); /* Calcula el tamaño para 3 columnas y ajusta el margen */
+    max-width: calc(33.333% - 20px); /* Establece un máximo para el ancho */
+    box-sizing: border-box; /* Incluye el borde y el padding en el ancho total */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 calc(50% - 20px); /* Calcula el tamaño para 3 columnas y ajusta el margen */
+    max-width: calc(50% - 20px); /* Establece un máximo para el ancho */
+    box-sizing: border-box; /* Incluye el borde y el padding en el ancho total */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
